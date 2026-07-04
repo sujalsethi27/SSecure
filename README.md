@@ -88,7 +88,47 @@ are **not included** in this repository.
 
 ## 📸 Screenshots
 
-Screenshots will be added soon.
+## 📸 Screenshots
+
+### Login
+
+![Login](src/main/java/com/project2/mailjwt/Screenshots/Login.png)
+
+---
+
+### Register
+
+![Register](src/main/java/com/project2/mailjwt/Screenshots/Register.png)
+
+---
+
+### Dashboard
+
+![Dashboard](src/main/java/com/project2/mailjwt/Screenshots/Dashboard.png)
+
+---
+
+### Verify Account
+
+![Verify Account](src/main/java/com/project2/mailjwt/Screenshots/VerifyAccount.png)
+
+---
+
+### Forgot Password
+
+![Forgot Password](src/main/java/com/project2/mailjwt/Screenshots/ForgotPassword.png)
+
+---
+
+### Reset Password
+
+![Reset Password](src/main/java/com/project2/mailjwt/Screenshots/ResetPassword.png)
+
+---
+
+### Welcome Email
+
+![Welcome Email](src/main/java/com/project2/mailjwt/Screenshots/WelcomeEmail.png)
 
 ---
 
