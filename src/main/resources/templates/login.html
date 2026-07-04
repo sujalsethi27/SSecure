@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Authify</title>
+
+    <link rel="stylesheet" th:href="@{/css/auth.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Welcome Back</h1>
+
+        <p>Please login to continue</p>
+
+      <form id="loginForm">
+
+    <div class="input-group">
+        <label>Email</label>
+        <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required>
+    </div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required>
+    </div>
+
+    <button type="submit">
+        Login
+    </button>
+
+   <button
+    type="button"
+    class="google-btn"
+    th:onclick="|window.location.href='@{/oauth2/authorization/google}'|">
+    Login with Google
+</button>
+
+ <button
+    type="button"
+    class="github-btn"
+    th:onclick="|window.location.href='@{/oauth2/authorization/github}'|">
+    Login with Github
+</button>
+    <p id="errorMessage" class="error"></p>
+
+</form>
+
+        <div class="links">
+
+       <a th:href="@{/view/register}">
+    Create Account
+</a>
+
+            <a th:href="@{/view/forgotPassword}">
+                Forgot Password?
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<script th:src="@{/js/login.js}"></script>
+</body>
+</html>

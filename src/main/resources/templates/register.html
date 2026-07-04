@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account | Authify</title>
+
+    <link rel="stylesheet" th:href="@{/css/auth.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Create Account</h1>
+
+        <p>Create your account to continue</p>
+
+        <form id="registerForm">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input
+                        type="password"
+                        id="password"
+                        placeholder="Create password"
+                        required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm password"
+                        required>
+            </div>
+
+            <button type="submit">
+                Create Account
+            </button>
+<p id="errorMessage" class="error"></p>
+        </form>
+
+        <div class="links">
+
+            <span>Already have an account?</span>
+
+            <a th:href="@{/view/login}">
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<script th:src="@{/js/register.js}"></script>
+</body>
+</html>

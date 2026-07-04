@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        SSecure
+    </div>
+
+    <div class="profile">
+
+        <div class="avatar" id="avatar" onclick="toggleMenu()">
+    
+</div>
+
+        <div class="menu" id="menu">
+
+           <button id="verifyBtn">Verify Account</button>
+
+<button id="logoutBtn">Logout</button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="hero">
+
+    <img th:src="@{/images/security.png}" alt="">
+
+<h3 id="username">Hey User 👋</h3>
+<p id="email"></p>
+
+    <h1>Welcome to my product</h1>
+
+    <p>
+        Let's start with a quick product tour and setup
+        the authentication in no time!
+    </p>
+
+    <button class="start-btn">
+        Get Started
+    </button>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+
+    document.getElementById("menu").classList.toggle("show");
+
+}
+
+window.onclick=function(e){
+
+    if(!e.target.matches(".avatar")){
+
+        document.getElementById("menu").classList.remove("show");
+
+    }
+
+}
+
+</script>
+
+<script th:src="@{/js/dashboard.js}"></script>
+</body>
+</html>
